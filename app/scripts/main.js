@@ -1,1 +1,3 @@
-console.log('\'Allo \'Allo!'); // eslint-disable-line no-console
+$(document).ready(function() {
+  $(".js-example-basic-single").select2();
+});
