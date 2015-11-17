@@ -17,6 +17,12 @@ body {
   padding-bottom: 20px;
 }
 
+.html .body {
+  height:100%;
+}
+
+
+
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
@@ -89,5 +95,40 @@ body {
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0;
+  }
+
+}
+
+.select2-container--open {
+  border-bottom:none;
+  }
+
+  .select2-search {
+  display:none !important;
+  }
+
+  .select2-container--default .select2-selection--single {
+    border-top:1px solid #AAA;
+    border-left:1px solid #AAA;
+    border-right:1px solid #AAA;
+    border-bottom:0px !important;
+  }
+
+  .select2-container--open .select2-container--default .select2-selection--single {
+    border-bottom:0px !important;
+  }
+
+  .select2-container--default .select2-selection--single .select2-selection__rendered {
+   border-radius:4px;
+   border-bottom:1px solid #AAA;
+  }
+
+  .select2 {min-width:275px;}
+
+
+@media only screen and (max-width : 768px) {
+  .select2 {
+    max-width:100%;
+    min-width:100%;
   }
 }
